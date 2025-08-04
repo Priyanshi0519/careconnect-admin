@@ -16,7 +16,7 @@ import DoctorDashboard from './pages/Doctor/DoctorDashboard';
 import DoctorAppointment from './pages/Doctor/DoctorAppointment';
 import DoctorProfile from './pages/Doctor/DoctorProfile';
 import { Navigate } from 'react-router-dom';
-import ChatPage from '../frontend/src/Pages/ChatPage'; 
+import ChatPage from '../frontend/Pages/ChatPage'; 
 
 
 const App = () => {
