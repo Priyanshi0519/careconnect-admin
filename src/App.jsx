@@ -11,12 +11,12 @@ import { Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Admin/Dashboard';
 import AllAppointments from './pages/Admin/AllAppointments';
 import AddDoctor from './pages/Admin/AddDoctor';
-import Home from '../frontend/Pages/Home'
+import Home from '../frontend/src/Pages/Home'
 import DoctorDashboard from './pages/Doctor/DoctorDashboard';
 import DoctorAppointment from './pages/Doctor/DoctorAppointment';
 import DoctorProfile from './pages/Doctor/DoctorProfile';
 import { Navigate } from 'react-router-dom';
-import ChatPage from '../frontend/Pages/ChatPage'; 
+import ChatPage from '../frontend/src/Pages/ChatPage'; 
 
 
 const App = () => {
