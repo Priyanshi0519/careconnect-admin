@@ -1,10 +1,17 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// Polyfill for Node.js build environments (Netlify)
+const crypto = require('crypto')
+
 export default defineConfig({
   plugins: [react()],
-  // server:{port:5174}
+  define: {
+    global: {},
+    crypto: {
+      getRandomValues: (arr) => crypto.randomFillSync(arr)
+    }
+  },
   server: {
     proxy: {
       '/api': 'http://localhost:4000'
